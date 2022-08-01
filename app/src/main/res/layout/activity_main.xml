@@ -46,18 +46,25 @@
 
             </LinearLayout>
 
-            <EditText
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="5dp"
+            <RelativeLayout
+                android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:inputType="text"
-                android:gravity="center"
-                android:hint="Search"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:background="@drawable/custom_edit"
-                android:drawableStart="@drawable/ic_baseline_search_24"
-                android:textColor="#BCB7B7" />
+                android:gravity="center">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_baseline_search_24"
+                    android:gravity="center"
+                    android:hint="Search"
+                    android:textColor="#BCB7B7" />
+
+            </RelativeLayout>
 
         </LinearLayout>
 
@@ -100,7 +107,7 @@
 
             <LinearLayout
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="75dp"
                 android:layout_width="match_parent"
                 android:background="#696969"
                 android:layout_height="0.5dp">
@@ -131,7 +138,7 @@
 
             <LinearLayout
                 android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="75dp"
                 android:layout_width="match_parent"
                 android:background="#696969"
                 android:layout_height="0.5dp">
@@ -158,7 +165,7 @@
         android:background="@color/black2">
 
         <LinearLayout
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -169,8 +176,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/contacts"/>
 
             </FrameLayout>
@@ -185,6 +192,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="5dp"
             android:orientation="vertical"
             android:gravity="center"
             android:layout_weight="1"
@@ -198,8 +206,8 @@
 
                 <ImageView
                     android:id="@+id/iv_profile"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/ic_baseline_chat_24"
                     android:scaleType="centerCrop"/>
 
@@ -211,7 +219,7 @@
                     <TextView
                         android:id="@+id/tv_count"
                         android:layout_width="17dp"
-                        android:layout_height="17dp"
+                        android:layout_height="20dp"
                         android:background="@drawable/shape_circle_green"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="6"
@@ -230,6 +238,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="5dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -241,8 +250,8 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:src="@drawable/ic_baseline_settings_24"/>
 
                 <LinearLayout
@@ -252,7 +261,7 @@
                     <TextView
                         android:id="@+id/tv_count"
                         android:layout_width="17dp"
-                        android:layout_height="17dp"
+                        android:layout_height="20dp"
                         android:background="@drawable/shape_circle_green"
                         android:gravity="center_horizontal|center_vertical"
                         android:text="!"
